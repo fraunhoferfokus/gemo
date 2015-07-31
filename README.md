@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gemeinschaftlich-e-Mobilität README
 Sharing cars instead of buying them – the concept of car-sharing already exists in many big cities. In the electro-mobile future, urban citizens will make common use of the infrastructure and a large number of vehicles. This is what scientists working at Fraunhofer Institute predict. In order to turn this vision into reality, scientists are working on the »Beyond Tomorrow Project« called “Shared use of e-mobility: vehicles, data and infrastructure“, or GeMo for short in German.
 
@@ -8,4 +9,6 @@ GeMo is one of seven »Beyond Tomorrow Projects« in which scientists are workin
 Get more information on: www.gemo.fraunhofer.de
 Development information can be found here: https://extsvnsrv.fokus.fraunhofer.de/cc/elan/gemo/
 
+=======
+>>>>>>> f5eca9e6d1986d4527213b02697f1c89a58c23f4
 # gemo
