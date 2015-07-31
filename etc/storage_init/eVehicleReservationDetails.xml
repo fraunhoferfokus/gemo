@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset xmlns="http://www.fokus.fraunhofer.de">
+    <schema_dsc>
+    	<text field="reservationID"/>
+        <text field="reservationType"/>
+        <timestamp field="segBegin">2012-07-03T12:00:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T14:00:00+01:00</timestamp>
+    </schema_dsc>
+	<data>
+    	<text field="reservationID">1</text>
+        <text field="reservationType">idle</text>
+        <timestamp field="segBegin">2012-07-03T16:00:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T16:04:00+01:00</timestamp>
+    </data>
+	  <data>
+    	<text field="reservationID">1</text>
+        <text field="reservationType">tour_private</text>
+        <timestamp field="segBegin">2012-07-03T16:05:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T18:00:00+01:00</timestamp>
+    </data>
+	  <data>
+    	<text field="reservationID">1</text>
+        <text field="reservationType">parking</text>
+        <timestamp field="segBegin">2012-07-03T18:01:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T18:17:00+01:00</timestamp>
+    </data>
+	<data>
+    	<text field="reservationID">1</text>
+        <text field="reservationType">tour_private</text>
+        <timestamp field="segBegin">2012-07-03T18:17:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T20:11:00+01:00</timestamp>
+    </data>
+	<data>
+    	<text field="reservationID">1</text>
+        <text field="reservationType">idle</text>
+        <timestamp field="segBegin">2012-07-03T20:11:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-03T20:11:00+01:00</timestamp>
+    </data>
+	
+	<data>
+    	<text field="reservationID">2</text>
+        <text field="reservationType">idle</text>
+        <timestamp field="segBegin">2012-07-04T16:00:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-04T16:04:00+01:00</timestamp>
+    </data>
+	  <data>
+    	<text field="reservationID">2</text>
+        <text field="reservationType">tour_business</text>
+        <timestamp field="segBegin">2012-07-04T16:05:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-04T16:45:00+01:00</timestamp>
+    </data>
+	  <data>
+    	<text field="reservationID">2</text>
+        <text field="reservationType">parking</text>
+        <timestamp field="segBegin">2012-07-04T16:45:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-04T17:03:00+01:00</timestamp>
+    </data>
+	<data>
+    	<text field="reservationID">2</text>
+        <text field="reservationType">idle</text>
+        <timestamp field="segBegin">2012-07-04T17:04:00+01:00</timestamp>
+        <timestamp field="segEnd">2012-07-04T17:04:00+01:00</timestamp>
+    </data>
+</dataset>

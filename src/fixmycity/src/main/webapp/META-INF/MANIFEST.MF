@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Class-Path: antlr-2.7.6.jar asm-3.1.jar c3p0-0.9.1.jar cglib-nodep-2.1
+ _3.jar commons-beanutils-1.7.0.jar commons-collections-2.1.1.jar comm
+ ons-io-1.2.jar commons-lang-2.2.jar commons-logging-1.1.1.jar de.fhg.
+ fokus.cm.common.jar de.fhg.fokus.cm.service.jar dom4j-1.6.1.jar ehcac
+ he-1.2.3.jar hibernate-3.2.7.ga.jar hibernate-annotations-3.3.0.ga.ja
+ r hibernate-c3p0-3.3.2.GA.jar hibernate-commons-annotations-3.0.0.ga.
+ jar hibernate-core-3.3.2.GA.jar hibernate-entitymanager-3.3.1.ga.jar 
+ hibernate-validator-3.0.0.ga.jar hyperjaxb3-ejb-roundtrip-0.3.jar hyp
+ erjaxb3-ejb-runtime-0.3.jar jackson-core-asl-1.1.1.jar javassist-3.3.
+ GA.jar jaxb-impl-2.1.6.jar jaxb-xjc-2.1.6.jar jboss-common-core-2.0.4
+ .GA.jar jersey-client-1.2.jar jersey-client-1.2.pom jersey-core-1.2.j
+ ar jersey-core-1.2.pom jersey-json-1.3.jar jersey-multipart-1.3.jar j
+ ersey-server-1.2.jar jettison-1.2.jar json-20090211.jar jsr311-api-1.
+ 1.1.jar jta-1.0.1B.jar log4j-1.2.13.jar mimepull-1.4.jar mysql-connec
+ tor-java-5.1.12.jar persistence-api-1.0.jar runtime-0.2.GA.jar slf4j-
+ api-1.5.8.jar stax-api-1.0.1.jar testing-0.2.GA.jar tools-0.2.GA.jar 
+ xmlunit-1.0.jar
+

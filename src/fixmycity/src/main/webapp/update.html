@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Form to send mashup update notification</title>
+<script type="text/javascript">	// See article "Changing Form Action URLs On-The-Fly" linked
+	//    from URL http://willmaster.com/possibilities/archives
+	//    for more information about how to use this code.
+	function ActionDeterminator() {
+		document.updateComplaintNotificationForm.action = '/fixmystadt/update?complaintId='
+				+ document.updateComplaintNotificationForm.complaintId.value;
+		return true;
+	}
+</script>
+</head>
+
+
+
+<body>
+	<h1>Form to send mashup update notification</h1>
+	<form name="updateComplaintNotificationForm"
+		action="/fixmystadt/update?complaintId=1" method="post">
+		<p>
+			Enter Complaint Id :<input type="number" value="1" name="complaintId"
+				size="3" />
+		</p>
+		<input type="submit" value="Send notification"
+			onclick="return ActionDeterminator();" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings version="2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:hj="http://hyperjaxb3.jvnet.org/ejb/schemas/customizations"
+	xmlns:orm="http://java.sun.com/xml/ns/persistence/orm" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	jaxb:extensionBindingPrefixes="hj orm xjc">
+	<jaxb:globalBindings generateIsSetMethod="true">
+		<xjc:simple />
+	</jaxb:globalBindings>
+
+	<jaxb:bindings schemaLocation="wadl/general.xsd" node="/xs:schema">
+
+		<!-- <hj:persistence>
+			<hj:default-one-to-many>
+				<orm:join-column />
+			</hj:default-one-to-many>
+			<hj:default-single-property type="xsd:string">
+				<hj:basic>
+					<orm:column length="3000" />
+				</hj:basic>
+			</hj:default-single-property>
+		</hj:persistence> -->
+
+		<!-- <jaxb:schemaBindings> <jaxb:package name="de.fhg.fokus.cm.ejb" /> 
+			</jaxb:schemaBindings> -->
+		<jaxb:bindings node="xs:complexType[@name='Photo']">
+			<jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id />
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='creationTime']">
+				<hj:version />
+			</jaxb:bindings>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='Category']">
+			<hj:generated-id name="Id" attributeName="test:tid" transient="false"/>
+			<!-- <jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id />
+			</jaxb:bindings> -->
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='Comment']">
+			<jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id />
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='creationTime']">
+				<hj:version />
+			</jaxb:bindings>
+		</jaxb:bindings>
+		
+		<jaxb:bindings node="xs:complexType[@name='Status']">
+		<hj:generated-id name="Id" attributeName="test:tid" transient="false"/>
+			<!--  <jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id> <hj:generated-value strategy="AUTO"/> 
+					</hj:id>
+			</jaxb:bindings>-->
+		</jaxb:bindings>
+		
+		<jaxb:bindings node="xs:complexType[@name='Rating']">
+			<jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id />
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='creationTime']">
+				<hj:version />
+			</jaxb:bindings>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='Complaint']">
+			<hj:generated-id name="Id" attributeName="test:tid" transient="false"/>
+			<!--  <jaxb:bindings node=".//xs:element[@name='id']">
+				<hj:id />
+			</jaxb:bindings>-->
+			<jaxb:bindings node=".//xs:element[@name='status']">
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='creationTime']">
+				<hj:version />
+			</jaxb:bindings>
+		<jaxb:bindings node=".//xs:element[@name='comment']">
+				<jaxb:property name="comments">
+				</jaxb:property>
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='rating']">
+				<jaxb:property name="ratings"></jaxb:property>
+			</jaxb:bindings>
+			<jaxb:bindings node=".//xs:element[@name='photo']">
+				<jaxb:property name="photos"></jaxb:property>
+			</jaxb:bindings>
+		</jaxb:bindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="wadl/request.xsd" node="/xs:schema">
+		<jaxb:bindings node="xs:complexType[@name='ComplaintRequest']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='CommentRequest']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='RatingRequest']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='StatusRequest']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='CategoryRequest']">
+			<hj:ignored />
+		</jaxb:bindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="wadl/response.xsd" node="/xs:schema">
+		<jaxb:bindings node="xs:complexType[@name='ResultList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='ComplaintList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='CommentList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='RatingList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='StatusList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='CategoryList']">
+			<hj:ignored />
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='PhotoList']">
+			<hj:ignored />
+		</jaxb:bindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="wadl/error.xsd" node="/xs:schema">
+		<jaxb:bindings node="xs:complexType[@name='Error']">
+			<hj:ignored />
+		</jaxb:bindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="elements.xsd" node="/xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="de.fhg.fokus.cm.ejb" />
+		</jaxb:schemaBindings>
+	</jaxb:bindings>
+</jaxb:bindings>

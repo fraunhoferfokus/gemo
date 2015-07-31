@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	xmlns:cm="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	elementFormDefault="qualified">
+
+	<include schemaLocation="general.xsd"></include>
+
+	<complexType name="ResultList">
+		<attribute name="offset" type="int"></attribute>
+		<attribute name="total" type="int"></attribute>
+		<attribute name="result" type="int"></attribute>
+	</complexType>
+
+	<complexType name="ComplaintList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="complaint" type="cm:Complaint" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="CommentList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="comment" type="cm:Comment" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="RatingList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="rating" type="cm:Rating" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="StatusList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="status" type="cm:Status" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="CategoryList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="category" type="cm:Category" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="PhotoList">
+		<complexContent>
+			<extension base="cm:ResultList">
+				<sequence>
+					<element name="photo" type="cm:Photo" minOccurs="0"
+						maxOccurs="unbounded"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+</schema>

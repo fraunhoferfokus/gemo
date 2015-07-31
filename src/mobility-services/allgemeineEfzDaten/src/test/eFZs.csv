@@ -1,0 +1,4 @@
+typeOfVehicle;eFZid;mobilityServiceProvider;numberOfSeats;navigationType;childSeats;nonSmoking;wheelChairSpace;gearChangingType;reserved 
+eCar;6666;fokus2go;4;1;2;true;2;1;false
+eCar;6667;fokus2go;3;1;2;true;2;2;false
+eCar;6668;fokus2go;3;1;2;true;2;2;true

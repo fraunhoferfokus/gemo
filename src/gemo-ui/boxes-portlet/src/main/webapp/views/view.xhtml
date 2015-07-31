@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head />
+	<h:body>
+		<h:form>
+			<div class="row-fluid boxed-div">
+				<div class="span4">
+					<h:graphicImage alt="#{i18n['od.dataset']}"
+						value="#{liferay.themeImagesURL}/govdata_metadata_types/typ_dataset.png"
+						title="#{i18n['od.dataset']}"
+						style="height:2.5em; margin-right:0.5em;" class="pull-left" />
+					<h4>#{i18n['od.datasets_latest_datasets']}</h4>
+
+					<h:dataTable value="#{datasets.datasets}" var="dataset">
+						<h:column>
+							<a href="/web/guest/suchen/-/details/#{dataset.name}"
+								title="#{dataset.title}"> <h:outputText
+									value="#{dataset.title.length() gt 40 ? dataset.title.substring(0,36).concat('...') : dataset.title}" />
+							</a>
+						</h:column>
+					</h:dataTable>
+				</div>
+				<div class="span4"
+					style="border-left: 1px dotted; border-right: 1px dotted; border-color: #D8D8D8; padding: 0 1em 0 1em;">
+					<h:graphicImage alt="#{i18n['od.document']}"
+						value="#{liferay.themeImagesURL}/govdata_metadata_types/typ_document.png"
+						title="#{i18n['od.document']}"
+						style="height:2.5em; margin-right:0.5em;" class="pull-left" />
+					<h4>#{i18n['od.home.recent_documents']}</h4>
+
+					<h:dataTable value="#{documents.documents}" var="document">
+						<h:column>
+							<a href="/web/guest/suchen/-/details/#{document.name}"
+								title="#{document.title}"> <h:outputText
+									value="#{document.title.length() gt 40 ? document.title.substring(0,36).concat('...') : document.title}" />
+							</a>
+						</h:column>
+					</h:dataTable>
+				</div>
+				<div class="span4">
+					<h:graphicImage alt="#{i18n['od.app']}"
+						value="#{liferay.themeImagesURL}/govdata_metadata_types/typ_app.png"
+						title="#{i18n['od.app']}"
+						style="height:2.5em; margin-right:0.5em;" class="pull-left" />
+					<h4>#{i18n['od.home.recent_apps']}</h4>
+					<h:dataTable value="#{apps.apps}" var="app">
+						<h:column>
+							<a href="/web/guest/suchen/-/details/#{app.name}"
+								title="#{app.title}"> <h:outputText
+									value="#{app.title.length() gt 40 ? app.title.substring(0,36).concat('...') : app.title}" />
+							</a>
+						</h:column>
+					</h:dataTable>
+				</div>
+			</div>
+		</h:form>
+	</h:body>
+</f:view>

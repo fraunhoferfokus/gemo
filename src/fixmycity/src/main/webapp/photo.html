@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Form to create a new photo</title>
+<script type="text/javascript">	// See article "Changing Form Action URLs On-The-Fly" linked
+	//    from URL http://willmaster.com/possibilities/archives
+	//    for more information about how to use this code.
+	function ActionDeterminator() {
+		document.addPhotoForm.action = 'cm/complaints/'
+				+ document.addPhotoForm.complaintId.value + '/photos';
+		return true;
+	}
+</script>
+</head>
+
+
+
+<body>
+	<h1>Form to create a new photo</h1>
+	<form name="addPhotoForm" action="cm/complaints/0/photos" method="post"
+		enctype="multipart/form-data">
+		<p>
+			Select a file : <input type="file" name="file" size="45" />
+		</p>
+		<p>
+			Enter Complaint Id :<input type="number" value="1" name="complaintId"
+				size="45" />
+		</p>
+		<input type="submit" value="Upload It"
+			onclick="return ActionDeterminator();" />
+	</form>
+</body>
+</html>

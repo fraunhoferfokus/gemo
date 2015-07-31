@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.fokus.fraunhofer.de/cm/schema/v1" xmlns:cm="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	elementFormDefault="qualified">
+
+	<xs:include schemaLocation="./wadl/general.xsd" />
+	<xs:include schemaLocation="./wadl/request.xsd" />
+	<xs:include schemaLocation="./wadl/response.xsd" />
+	<xs:include schemaLocation="./wadl/error.xsd" />
+
+	<!-- elements used in application.wadl -->
+	<!-- request elements -->
+	<xs:element name="addComplaintRequest" type="cm:ComplaintRequest"></xs:element>
+	<xs:element name="updateComplaintRequest" type="cm:ComplaintRequest"></xs:element>
+
+	<xs:element name="addCommentRequest" type="cm:CommentRequest"></xs:element>
+	<xs:element name="updateCommentRequest" type="cm:CommentRequest"></xs:element>
+
+	<xs:element name="addRatingRequest" type="cm:RatingRequest"></xs:element>
+	<xs:element name="updateRatingRequest" type="cm:RatingRequest"></xs:element>
+
+	<xs:element name="addStatusRequest" type="cm:StatusRequest"></xs:element>
+	<xs:element name="updateStatusRequest" type="cm:StatusRequest"></xs:element>
+
+	<xs:element name="addCategoryRequest" type="cm:CategoryRequest"></xs:element>
+	<xs:element name="updateCategoryRequest" type="cm:CategoryRequest"></xs:element>
+
+	<!-- response elements -->
+	<xs:element name="complaint" type="cm:Complaint"></xs:element>
+	<xs:element name="complaints" type="cm:ComplaintList"></xs:element>
+
+	<xs:element name="comment" type="cm:Comment"></xs:element>
+	<xs:element name="comments" type="cm:CommentList"></xs:element>
+
+	<xs:element name="photo" type="cm:Photo"></xs:element>
+	<xs:element name="photos" type="cm:PhotoList"></xs:element>
+
+	<xs:element name="rating" type="cm:Rating"></xs:element>
+	<xs:element name="ratings" type="cm:RatingList"></xs:element>
+
+	<xs:element name="status" type="cm:Status"></xs:element>
+	<xs:element name="statuses" type="cm:StatusList"></xs:element>
+
+	<xs:element name="category" type="cm:Category"></xs:element>
+	<xs:element name="categories" type="cm:CategoryList"></xs:element>
+
+	<!-- error elements -->
+	<xs:element name="error" type="cm:Error"></xs:element>
+</xs:schema>

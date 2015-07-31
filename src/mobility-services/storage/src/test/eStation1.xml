@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset xmlns="http://www.fokus.fraunhofer.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.fokus.fraunhofer.de ../main/resources/db.xsd">
+
+    <schema_dsc>
+        <timestamp field="buildDate">2012-05-30T09:30:10.5</timestamp>
+        <text field="operator">eTexnix</text>
+        <float field="pricePerKiloWattHour">0.12</float>
+        <text field="currency">eur</text>
+        <float field="lon">52.515489</float>
+        <float field="lat">13.370189</float>
+    </schema_dsc>
+
+	<data>
+        <timestamp field="buildDate">2012-05-30T09:30:10.5</timestamp>
+        <text field="operator">eTexnix</text>
+        <float field="pricePerKiloWattHour">0.12</float>
+        <text field="currency">eur</text>
+        <float field="lon">52.515489</float>
+        <float field="lat">13.370189</float>
+    </data>
+
+</dataset>

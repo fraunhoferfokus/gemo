@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<localRepository>${user.home}/.m2/repository</localRepository>
+	<interactiveMode>true</interactiveMode>
+	<usePluginRegistry>false</usePluginRegistry>
+	<offline>false</offline>
+
+	<servers>
+		<server>
+			<id>streetlife-panel</id>
+			<username>tomcat</username>
+			<password>fokus123</password>
+		</server>
+	</servers>
+
+	<profiles>
+   <profile>
+       <id>streetlife</id>
+       <properties>
+         <tomcat.url>http://193.175.133.251:8080/manager/text</tomcat.url>
+         <tomcat.server>streetlife-panel</tomcat.server>
+	 <storage.url.base>http://streetlifemmecp.apiary-mock.com</storage.url.base>
+         <java.compile.version>1.7</java.compile.version>
+       </properties>
+    </profile>
+		<profile>
+			<id>gemo</id>
+			<properties>
+				<jdbc.postgresql.dependency.version>9.1-901-1.jdbc4</jdbc.postgresql.dependency.version>
+				<storage.data.hibernate.connection.url>jdbc:postgresql://localhost:5432/storage</storage.data.hibernate.connection.url>
+				<storage.data.hibernate.connection.username>storage</storage.data.hibernate.connection.username>
+				<storage.data.hibernate.connection.password>aa0Eepe1</storage.data.hibernate.connection.password>
+
+				<storage.user.hibernate.connection.url>jdbc:postgresql://localhost:5432/token</storage.user.hibernate.connection.url>
+				<storage.user.hibernate.connection.username>storage</storage.user.hibernate.connection.username>
+				<storage.user.hibernate.connection.password>aa0Eepe1</storage.user.hibernate.connection.password>
+
+				<propertyprovider.default.property.path>/etc/mobility-data-cloud/mdc.properties</propertyprovider.default.property.path>
+				<propertyprovider.test.property.path>/etc/mobility-data-cloud/mdc.properties</propertyprovider.test.property.path>
+
+				<liferay.auto.deploy.dir>/opt/liferay-portal-6.1.1-ce-ga2/deploy</liferay.auto.deploy.dir>
+				<liferay.version>6.1.1</liferay.version>
+
+				<!-- props for injection into mdc.properties -->
+				<gemo.uri>https://193.175.133.248/service/</gemo.uri>
+				<gemo.uri.storage>http://localhost:8080/storage</gemo.uri.storage>
+				<gemo.uri.storage.search>/search</gemo.uri.storage.search>
+				<gemo.uri.storage.search.parameter>?query=</gemo.uri.storage.search.parameter>
+				<gemo.uri.storage.update>/update</gemo.uri.storage.update>
+				<gemo.uri.storage.insert>/insert</gemo.uri.storage.insert>
+				
+                <gemo.uri.storage.private.search>/search/private</gemo.uri.storage.private.search>
+                <gemo.uri.storage.private.update>/update/private</gemo.uri.storage.private.update>
+                <gemo.uri.storage.private.insert>/insert/private</gemo.uri.storage.private.insert>
+                <gemo.uri.storage.private.search.parameter>?query=</gemo.uri.storage.private.search.parameter>
+				
+				<gemo.uri.efz.data>http://localhost:8080/allgemeineEfzDaten</gemo.uri.efz.data>
+				<gemo.uri.efz.position>http://localhost:8080/allgemeineLadestationenDaten</gemo.uri.efz.position>
+				<gemo.uri.efz.reservation>http://localhost:8080/reservierungEfz</gemo.uri.efz.reservation>
+				<gemo.uri.efz.availability>http://localhost:8080/verfuegbarkeitEfz</gemo.uri.efz.availability>
+				<gemo.uri.efz.availability.query>/queryAvailability</gemo.uri.efz.availability.query>
+				<gemo.uri.efz.availability.query.parameter>?eVehicleID=</gemo.uri.efz.availability.query.parameter>
+				<gemo.uri.efz.availability.query.method.vehicle>/vehicle</gemo.uri.efz.availability.query.method.vehicle>
+				<gemo.uri.efz.availability.query.method.vehicles>/vehicles</gemo.uri.efz.availability.query.method.vehicles>
+				
+				<gemo.uri.efz.availability.update>/updateAvailability</gemo.uri.efz.availability.update>
+				<gemo.uri.efz.data.query>/query</gemo.uri.efz.data.query>
+				<gemo.uri.efz.data.query.parameter>?eFZId=</gemo.uri.efz.data.query.parameter>
+				
+				<gemo.reservation.table>e_vehicle_reservation</gemo.reservation.table>
+				<gemo.reservation.type>maintenance,tour_business,tour_private,parking</gemo.reservation.type>
+				
+				<gemo.uri.charge.data>###</gemo.uri.charge.data>
+				<gemo.uri.charge.position>###</gemo.uri.charge.position>
+				<gemo.uri.charge.availability>http://localhost:8080/verfuegbarkeitLadestation</gemo.uri.charge.availability>
+				<gemo.uri.charge.availability.query>/queryAvailability</gemo.uri.charge.availability.query>
+				<gemo.charging.station.resevation.table>charging_station_reservation</gemo.charging.station.resevation.table>
+				<gemo.uri.charge.availability.update>/updateAvailability</gemo.uri.charge.availability.update>
+				<gemo.uri.charge.availability.query.parameter>?LSId=</gemo.uri.charge.availability.query.parameter>
+
+				<gemo.uri.opnv>http://demo.hafas.de/bin/pub/vbb-fahrinfo/relaunch2011/extxml.exe/</gemo.uri.opnv>
+				<gemo.uri.opnv.param.access>f779c8315fcf3959a518d6dc94cd491c</gemo.uri.opnv.param.access>
+				<gemo.uri.userprofile>http://localhost:8080/userprofile</gemo.uri.userprofile>
+				<gemo.uri.userprofile.add_user>/add_user</gemo.uri.userprofile.add_user>
+
+				<gemo.users.table>users</gemo.users.table>
+				<gemo.payment.table>payments</gemo.payment.table>
+				<odrproxy.ckan.key>d9d66599-ef8a-4881-bc47-cf09449ebf62</odrproxy.ckan.key>
+				<odrproxy.ckan.url>http://localhost/ckan</odrproxy.ckan.url>
+				
+				<gemo.scopes.table>scopes</gemo.scopes.table>
+				<gemo.servicesScopes.table>services</gemo.servicesScopes.table>
+				
+				<gemo.caraccess.private.path>/etc/mobility-data-cloud/keys/id_priv</gemo.caraccess.private.path>
+				<gemo.caraccess.public.path>/etc/mobility-data-cloud/keys/id_pub</gemo.caraccess.public.path>
+				<gemo.caraccess.sharedsecret.path>/etc/mobility-data-cloud/keys/AESKey.txt</gemo.caraccess.sharedsecret.path>
+				<!-- START partizipation (and/used by) fixmycity -->
+				<gemo.uri.participation>http://localhost:8080/partizipation</gemo.uri.participation>
+				<gemo.uri.participation.complaint>/complaints</gemo.uri.participation.complaint>
+				<gemo.uri.participation.complaint.query.efzid>categoryId=</gemo.uri.participation.complaint.query.efzid>
+				<gemo.uri.participation.complaint.query.lat>latitude=</gemo.uri.participation.complaint.query.lat>
+				<gemo.uri.participation.complaint.query.lon>longitude=</gemo.uri.participation.complaint.query.lon>
+				<gemo.uri.participation.complaint.query.radius>radius=</gemo.uri.participation.complaint.query.radius>
+				<gemo.uri.participation.complaint.query.limit>limit=</gemo.uri.participation.complaint.query.limit>
+				<gemo.uri.participation.complaint.query.offset>offset=</gemo.uri.participation.complaint.query.offset>
+				<gemo.application.registration.deployment.path>https://193.175.133.248/service</gemo.application.registration.deployment.path>
+				<gemo.application.registration.binary.path>/etc/mobility-data-cloud/mobility-services-binaries</gemo.application.registration.binary.path>
+				<gemo.application.registration.hotdeploy.path>/opt/liferay-portal-6.1.2-ce-ga3/deploy</gemo.application.registration.hotdeploy.path>
+				<gemo.uri.fixmycity>http://localhost:8080/fixmycity/cm</gemo.uri.fixmycity>
+				<gemo.uri.fixmycity.complaint>/complaints</gemo.uri.fixmycity.complaint>
+				<gemo.uri.fixmycity.category>/categories</gemo.uri.fixmycity.category>
+				<gemo.credentials.fixmycity.username>fokus</gemo.credentials.fixmycity.username>
+				<gemo.credentials.fixmycity.password>f0ku5</gemo.credentials.fixmycity.password>
+
+				<fixmycity.test.hibernate.connection.url>jdbc:postgresql://localhost:5432/fixmycity</fixmycity.test.hibernate.connection.url>
+				<fixmycity.test.hibernate.connection.username>fixmycity</fixmycity.test.hibernate.connection.username>
+				<fixmycity.test.hibernate.connection.password>fixmycity</fixmycity.test.hibernate.connection.password>
+				<!-- change "none" to "create" on first deployment to generate the empty tables -->
+				<fixmycity.test.hibernate.hbm2ddl.auto>none</fixmycity.test.hibernate.hbm2ddl.auto>
+				<fixmycity.default.hibernate.connection.url>jdbc:postgresql://localhost:5432/fixmycity</fixmycity.default.hibernate.connection.url>
+				<fixmycity.default.hibernate.connection.username>fixmycity</fixmycity.default.hibernate.connection.username>
+				<fixmycity.default.hibernate.connection.password>fixmycity</fixmycity.default.hibernate.connection.password>
+				<!-- change "none" to "create" on first deployment to generate the empty tables -->
+				<fixmycity.default.hibernate.hbm2ddl.auto>none</fixmycity.default.hibernate.hbm2ddl.auto>
+				
+				<!-- END partizpation (and/used by) fixmycity -->
+			</properties>
+		</profile>
+		<profile>
+			<id>gemo-integration-tests</id>
+			<properties>
+				<!-- Constants.STORAGE_URI/"gemo.uri.storage" in StorageTests -->
+				<gemo.uri.storage>https://[2001:638:806:f104::248]/service/storage</gemo.uri.storage>
+				<propertyprovider.default.property.path>/etc/mobility-data-cloud/mdc.properties</propertyprovider.default.property.path>
+				<gemo.credentials.fixmycity.username>fokus</gemo.credentials.fixmycity.username>
+				<gemo.credentials.fixmycity.password>f0ku5</gemo.credentials.fixmycity.password>
+			</properties>
+		</profile>
+		<profile>
+		  <!-- profile currently not used https://extsvnsrv.fokus.fraunhofer.de/cc/elan/gemo/wiki/CI#GeMo_Services_Tests-->
+			<id>gemo-tests</id>
+			<properties>
+				<!-- variable used only for this profile (gemo-tests) -->
+				<gemo.test.server.uri>https://193.175.133.248/</gemo.test.server.uri>
+
+				<jdbc.postgresql.dependency.version>9.1-901-1.jdbc4</jdbc.postgresql.dependency.version>
+				<storage.data.hibernate.connection.url>jdbc:postgresql://localhost:5432/storage</storage.data.hibernate.connection.url>
+				<storage.data.hibernate.connection.username>storage</storage.data.hibernate.connection.username>
+				<storage.data.hibernate.connection.password>aa0Eepe1</storage.data.hibernate.connection.password>
+
+				<storage.user.hibernate.connection.url>jdbc:postgresql://localhost.86:5432/gemo-user</storage.user.hibernate.connection.url>
+				<storage.user.hibernate.connection.username>gemo</storage.user.hibernate.connection.username>
+				<storage.user.hibernate.connection.password>gemo</storage.user.hibernate.connection.password>
+
+				<propertyprovider.default.property.path>/etc/mobility-data-cloud/mdc.properties</propertyprovider.default.property.path>
+				<propertyprovider.test.property.path>/etc/mobility-data-cloud/mdc.properties</propertyprovider.test.property.path>
+
+				<liferay.auto.deploy.dir>/opt/liferay-portal-6.1.1-ce-ga2/deploy</liferay.auto.deploy.dir>
+				<liferay.version>6.1.1</liferay.version>
+
+				<!-- START props for injection into mdc.properties -->
+				<gemo.uri.storage>${gemo.test.server.uri}/storage</gemo.uri.storage>
+				<gemo.uri.storage.search>/search</gemo.uri.storage.search>
+				<gemo.uri.storage.search.parameter>?query=</gemo.uri.storage.search.parameter>
+				<gemo.uri.storage.update>/update</gemo.uri.storage.update>
+				<gemo.uri.storage.insert>/insert</gemo.uri.storage.insert>
+				
+				<gemo.uri.efz.data>${gemo.test.server.uri}/allgemeineEfzDaten</gemo.uri.efz.data>
+				<gemo.uri.efz.position>${gemo.test.server.uri}/allgemeineLadestationenDaten</gemo.uri.efz.position>
+				<gemo.uri.efz.reservation>${gemo.test.server.uri}/reservierungEfz</gemo.uri.efz.reservation>
+				<gemo.uri.efz.availability>${gemo.test.server.uri}/verfuegbarkeitEfz</gemo.uri.efz.availability>
+				<gemo.uri.efz.availability.query>/queryAvailability</gemo.uri.efz.availability.query>
+				<gemo.uri.efz.availability.query.parameter>?EFzId=</gemo.uri.efz.availability.query.parameter>
+				<gemo.uri.efz.availability.update>/updateAvailability</gemo.uri.efz.availability.update>
+				<gemo.uri.efz.data.query>/query</gemo.uri.efz.data.query>
+				<gemo.uri.efz.data.query.parameter>?eFZId=</gemo.uri.efz.data.query.parameter>
+				
+				<gemo.uri.charge.data>###</gemo.uri.charge.data>
+				<gemo.uri.charge.position>###</gemo.uri.charge.position>
+				<gemo.uri.charge.availability>${gemo.test.server.uri}/verfuegbarkeitLadestation</gemo.uri.charge.availability>
+				<gemo.uri.charge.availability.query>/queryAvailability</gemo.uri.charge.availability.query>
+				<gemo.uri.charge.availability.update>/updateAvailability</gemo.uri.charge.availability.update>
+				<gemo.uri.charge.availability.query.parameter>?LSId=</gemo.uri.charge.availability.query.parameter>
+				
+				<gemo.uri.opnv>http://demo.hafas.de/bin/pub/vbb-fahrinfo/relaunch2011/extxml.exe/</gemo.uri.opnv>
+				<gemo.uri.opnv.param.access>f779c8315fcf3959a518d6dc94cd491c</gemo.uri.opnv.param.access>
+
+				<gemo.uri.userprofile>${gemo.test.server.uri}/userprofile</gemo.uri.userprofile>
+				<gemo.uri.userprofile.add_user>/add_user</gemo.uri.userprofile.add_user>
+
+				<gemo.users.table>users</gemo.users.table>
+				<gemo.billing.table>billing</gemo.billing.table>
+				<!-- END props for injection into mdc.properties -->
+				<!-- START partizpation (and/used by) fixmycity -->
+				<gemo.uri.participation>http://govmashups.fokus.fraunhofer.de/fixmystadt-service</gemo.uri.participation>
+				<gemo.uri.participation.complaint>/cm/complaints</gemo.uri.participation.complaint>
+				<gemo.uri.participation.complaint.query.efzid>categoryId=</gemo.uri.participation.complaint.query.efzid>
+				<gemo.uri.participation.complaint.query.lat>latitude=</gemo.uri.participation.complaint.query.lat>
+				<gemo.uri.participation.complaint.query.lon>longitude=</gemo.uri.participation.complaint.query.lon>
+				<gemo.uri.participation.complaint.query.radius>radius=</gemo.uri.participation.complaint.query.radius>
+				<gemo.uri.participation.complaint.query.limit>limit=</gemo.uri.participation.complaint.query.limit>
+				<gemo.uri.participation.complaint.query.offset>offset=</gemo.uri.participation.complaint.query.offset>
+
+				<fixmycity.test.hibernate.connection.url>jdbc:postgresql://localhost:5432/fixmycity</fixmycity.test.hibernate.connection.url>
+				<fixmycity.test.hibernate.connection.username>fixmycity</fixmycity.test.hibernate.connection.username>
+				<fixmycity.test.hibernate.connection.password>fixmycity</fixmycity.test.hibernate.connection.password>
+				<fixmycity.default.hibernate.connection.url>jdbc:postgresql://localhost:5432/fixmycity</fixmycity.default.hibernate.connection.url>
+				<fixmycity.default.hibernate.connection.username>fixmycity</fixmycity.default.hibernate.connection.username>
+				<fixmycity.default.hibernate.connection.password>fixmycity</fixmycity.default.hibernate.connection.password>
+				<!-- END partizpation (and/used by) fixmycity -->
+			</properties>
+			<!-- profile currently not used https://extsvnsrv.fokus.fraunhofer.de/cc/elan/gemo/wiki/CI#GeMo_Services_Tests-->
+		</profile>
+
+	</profiles>
+	<activeProfiles>
+		<activeProfile>gemo</activeProfile>
+	</activeProfiles>
+</settings>

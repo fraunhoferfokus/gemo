@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset xmlns="http://www.fokus.fraunhofer.de">
+    <schema_dsc>
+        <text field="eVehicleID"/>
+        <float field="lat">1062.0</float>
+        <float field="lon">1062.0</float>
+    </schema_dsc>
+    <data>
+        <text field="eVehicleID">ecar_00001</text>
+        <float field="lat">52.494861</float>
+        <float field="lon">13.505107</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00002</text>
+        <float field="lat">52.596801</float>
+        <float field="lon">13.441579</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00003</text>
+        <float field="lat">52.498771</float>
+        <float field="lon">13.47922</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00004</text>
+        <float field="lat">52.562689</float>
+        <float field="lon">13.346298</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00005</text>
+        <float field="lat">52.557782</float>
+        <float field="lon">13.393872</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00006</text>
+        <float field="lat">52.590596</float>
+        <float field="lon">13.490206</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00007</text>
+        <float field="lat">52.45975</float>
+        <float field="lon">13.404006</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00008</text>
+        <float field="lat">52.567759</float>
+        <float field="lon">13.364811</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00009</text>
+        <float field="lat">52.550512</float>
+        <float field="lon">13.28506</float>
+    </data>
+    <data>
+        <text field="eVehicleID">ecar_00010</text>
+        <float field="lat">52.596694</float>
+        <float field="lon">13.474782</float>
+    </data>
+</dataset>

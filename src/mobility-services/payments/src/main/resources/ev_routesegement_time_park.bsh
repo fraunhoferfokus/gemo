@@ -1,0 +1,10 @@
+final BigDecimal minutes = new BigDecimal(
+	new Duration(dtFrom, dtTo).getStandardMinutes()
+);
+
+final BigDecimal price = new BigDecimal(BILLSERVICE_PRICE_PER_MINUTE_DRIVE)
+	.multiply(minutes)
+	.setScale(2, BigDecimal.ROUND_CEILING);
+
+// return the result
+result = units*50;

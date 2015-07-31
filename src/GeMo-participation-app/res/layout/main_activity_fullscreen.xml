@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1E22"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:background="#1A1E22"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/vehicles_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicles_button" />
+
+        <Button
+            android:id="@+id/charging_stations_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/charging_station_button" />
+
+    </LinearLayout>
+
+</FrameLayout>

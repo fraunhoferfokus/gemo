@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset xmlns="http://www.fokus.fraunhofer.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.fokus.fraunhofer.de ../main/resources/db.xsd">
+
+    <schema_dsc>
+        <timestamp field="geburtstag">2002-05-30T09:30:10.5</timestamp>
+        <text field="vorname">Max</text>
+        <integer field="alter">25</integer>
+        <float field="reichtum">1024.55</float>
+    </schema_dsc>
+
+    <data>
+        <timestamp field="geburtstag">2012-05-30T09:30:10.5</timestamp>
+        <text field="vorname">Erika</text>
+        <integer field="alter">25</integer>
+        <float field="reichtum">1024.55</float>
+    </data>
+	
+    <data>
+        <timestamp field="geburtstag">2012-05-30T09:30:10.5</timestamp>
+        <text field="vorname">Erika</text>
+        <integer field="alter">22</integer>
+        <float field="reichtum">50.5555</float>
+    </data>
+
+</dataset>

@@ -1,0 +1,52 @@
+einzelne institute interessieren nicht
+
+Folie Roadmap:
+    Ein Satz der alles bescheibt. Roadmap für die nächsten Jahre. Märkte von übermorgen, szenarien ansehen die diese Vision untermauern. Nicht sehr zukunftsträchtig. Wir meinen wann es zum Alltagsgeschäft gehört.
+    
+    
+    Wir glauben das... deshalb spielt das hier...
+    
+Smartphones sind in Zukunft ein Schlüssel um zugang zum Fahrzeug zu erhalten und zur reiseplanung. viele verschiedene systeme fahrzeuge, ladestationen, smartphones, nutzer, datenströme... diese daten müssen ständig verfügbar sein in einem virtuellen raum in der cloud.
+
+cloud folie: mehr bringen, motivieren, zukunftsvision
+    mehrwert darstellen
+    keine isolierte appaentwicklung
+    ökosystem von datenquellen, lieferanten
+    dienst über offene webbasierte schnittstellen
+    enabler für dritte die apps von den daten bereitstellen
+    wir wollen nicht nur ein zwei apps entwicklen
+    daten beherrschbar machen für dritte
+    one stop shops
+    opendata bewegung und aktiv unterstützen
+    verwaltungen öffnen datenquellen
+    lücke füllen mit mobilitätsdaten
+    
+LSP Szenario...
+    Better Place
+    
+Szenarien evtl. als erstes darstellen
+    was entstehen daraus für probleme und herausforderungen -> woran forschen wir
+    
+    motivieren!!
+    
+probleme skizzieren
+    wir brauchen systeme für viele daten und traffic
+    daten bisher in silos
+    nicht aggregierbar
+    daten sollten in der luft schwirren (cloud)
+    offene schnittstellen
+    durch veredlung verschneidung von daten entsteht ein mehrwert für den nutzer
+    entwicklungsplatform für mobilitätsplatformen !!!!
+    wir können nicht so innovativ sein wie die entwickler da draußen
+    wie bei mobilen engeräten (android, ios)
+    solch eine platform für mobilität zu schaffen
+    daten sind rohstoff, am wichtigsten
+    daten sind rohstoff
+    
+    echtzeitfähigkeit für mobilität
+    
+abwehr gegen mobilitätsmarkt vom bund:
+    wir glauben wir sind leichtgewichtiger, wir können dienste verschneiden, wir sehen uns als offenes modell, finanzieller aspekt gering, bestätigung durch opendata platform, für uns ist wichtig die daten reinzustellen, verfügbar zu machen... platform öffnen nicht nur für professionelle datenanbieter -> crowdsourcing
+    
+    meine kontaktinformation auf die letzte folie
+    wir sind offen für projekte in diesem umfeld, gespräche gerne in der pause

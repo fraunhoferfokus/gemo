@@ -1,0 +1,98 @@
+
+
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.hmenu>li, .hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.hmenu, ul.hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.hmenu>li:first-child {
+   padding-right:0;
+}
+
+ul.hmenu ul{
+   background-color: #EFF2F5 !important;
+}
+
+.header
+{
+   z-index: 1;
+}
+
+.content-layout, .content-layout-row, .layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.search>input[type="text"] 
+{
+   margin :0;
+}
+
+.postmetadataheader{
+   zoom:1;
+}
+
+.postheadericons span{
+   zoom: 1;
+}
+.postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.content 
+{
+   width: auto;
+   float:none;
+}
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	xmlns:cm="http://www.fokus.fraunhofer.de/cm/schema/v1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	elementFormDefault="qualified"
+	xmlns:hj="http://hyperjaxb3.jvnet.org/ejb/schemas/customizations"
+	xmlns:orm="http://java.sun.com/xml/ns/persistence/orm"
+	jaxb:extensionBindingPrefixes="hj orm">
+
+	<simpleType name="Latitude">
+		<restriction base="double">
+			<minInclusive value="-90.0"></minInclusive>
+			<maxInclusive value="90.0"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Longitude">
+		<restriction base="double">
+			<minInclusive value="-180.0"></minInclusive>
+			<maxInclusive value="180.0"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Radius">
+		<restriction base="double">
+			<minExclusive value="0.0"></minExclusive>
+			<maxInclusive value="40.0"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Limit">
+		<restriction base="integer">
+			<minInclusive value="1"></minInclusive>
+			<maxInclusive value="100"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="RatingValue">
+		<restriction base="integer">
+			<minInclusive value="1"></minInclusive>
+			<maxInclusive value="5"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="AverageRating">
+		<restriction base="float">
+			<minInclusive value="1.0"></minInclusive>
+			<maxInclusive value="5.0"></maxInclusive>
+		</restriction>
+	</simpleType>
+
+	<complexType name="Photo">
+		<sequence>
+			<element name="id" type="long"></element>
+			<element name="userId" type="string"></element>
+			<element name="creationTime" type="dateTime"></element>
+			<element name="url" type="anyURI"></element>
+			<!--<element name="photodata" type="base64Binary"></element> <element 
+				name="phototype" type="string"></element> -->
+		</sequence>
+	</complexType>
+
+	<complexType name="Geolocation">
+		<sequence>
+			<element name="latitude" type="cm:Latitude"></element>
+			<element name="longitude" type="cm:Longitude"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Address">
+		<sequence>
+			<element name="countryCode" type="string"></element>
+			<element name="city" type="string"></element>
+			<element name="postalCode" type="string"></element>
+			<element name="street" type="string"></element>
+			<element name="houseNo" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Status">
+		<sequence>
+			<!--  <element name="id" type="long"> 
+				 <annotation> <appinfo> <hj:id> <hj:generated-value strategy="SEQUENCE"/> 
+					</hj:id> </appinfo> </annotation> 
+			</element>-->
+			<element name="title" type="string"></element>
+			<element name="description" type="cm:LongText"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Category">
+		<sequence>
+			<!--<element name="id" type="long"></element>-->
+			<element name="title" type="string"></element>
+			<element name="description" type="cm:LongText"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Comment">
+		<sequence>
+			<element name="id" type="long"></element>
+			<element name="userId" type="string"></element>
+			<element name="creationTime" type="dateTime"></element>
+			<element name="newStatus" type="cm:Status" minOccurs="0"></element>
+			<element name="message" type="cm:LongText"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Rating">
+		<sequence>
+			<element name="id" type="long"></element>
+			<element name="userId" type="string"></element>
+			<element name="creationTime" type="dateTime"></element>
+			<element name="value" type="cm:RatingValue"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Complaint">
+		<sequence>
+			<!--  <element name="id" type="long"></element>-->
+			<element name="userId" type="string"></element>
+			<element name="title" type="string"></element>
+			<element name="description" type="cm:LongText"></element>
+			<element name="status" type="cm:Status"></element>
+			<element name="category" type="cm:Category"></element>
+			<element name="creationTime" type="dateTime"></element>
+			<element name="startTime" type="dateTime"></element>
+			<element name="endTime" type="dateTime"></element>
+			<element name="tags" type="string" minOccurs="0"></element>
+			<element name="geolocation" type="cm:Geolocation"></element>
+			<element name="address" type="cm:Address" minOccurs="0"></element>
+			<element name="averageRating" type="cm:AverageRating"
+				minOccurs="0"></element>
+			<element name="comments" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="comment" type="cm:Comment" maxOccurs="unbounded"></element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ratings" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="rating" type="cm:Rating" maxOccurs="unbounded"></element>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="photos" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="photo" type="cm:Photo" maxOccurs="unbounded"></element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<simpleType name="LongText">
+		<restriction base="string">
+			<maxLength value="3000"></maxLength>
+		</restriction>
+	</simpleType>
+
+</schema>

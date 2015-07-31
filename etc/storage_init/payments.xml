@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset xmlns="http://www.fokus.fraunhofer.de">
+    <schema_dsc>
+        <integer field="userprofileid"/>
+        <integer field="reservationsequenceid"/>
+        <text field="confirmed"/>
+        <text field="items"/>
+		<float field="totalprice"/>
+		<timestamp field="createdat"/>
+		<text field="paid"/>
+		<timestamp field="paidat"/>
+		<text field="deleted"/>
+    </schema_dsc>
+	<data>
+		<integer field="userprofileid">1</integer>
+        <integer field="reservationsequenceid">1</integer>
+        <text field="confirmed">true</text>
+        <text field="items">1.) idle (4 min) =  0.0 EUR 2.) tour_private (115 min) =  22.5 EUR 3.) parking (16 min) =  3.0 EUR 4.) tour_private (54 min) =  6.0 EUR 5.) idle (0 min) =  0.0 EUR</text>
+		<float field="totalprice">31.5</float>
+		<timestamp field="createdat">2012-07-03T20:12:00+01:00</timestamp>
+		<text field="paid">true</text>
+		<timestamp field="paidat">2012-07-07T22:21:02+01:00</timestamp>
+		<text field="deleted">false</text>
+    </data>
+	<data>
+		<integer field="userprofileid">1</integer>
+        <integer field="reservationsequenceid">2</integer>
+        <text field="confirmed">false</text>
+        <text field="items">1.) idle (4 min) =  0.0 EUR 2.) tour_business (40 min) =  21.5 EUR 3.) parking (18 min) =  3.0 EUR 4.) idle (0 min) =  0.0 EUR</text>
+		<float field="totalprice">24.5</float>
+		<timestamp field="createdat">2012-07-04T17:04:00+01:00</timestamp>
+		<text field="paid">true</text>
+		<timestamp field="paidat">2012-07-05T07:04:00+01:00</timestamp>
+		<text field="deleted">false</text>
+    </data>
+</dataset>

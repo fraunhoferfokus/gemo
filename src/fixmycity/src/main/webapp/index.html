@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>complaint management simple webinterface</title>
+</head>
+<body>
+	<h1>complaint management simple webinterface</h1>
+	<p>
+		<a href="cm/statuses">list statuses</a>
+	</p>
+	<p>
+		<a href="status.html">create new status</a>
+	</p>
+	<p>
+		<a href="cm/categories">list categories</a>
+	</p>
+	<p>
+		<a href="category.html">create new category</a>
+	</p>
+	<p>
+		<a href="photo.html">create new photo</a>
+	</p>
+	<p>
+		<a href="complaint.jsp">create new complaint</a>
+	</p>
+	<br />
+
+	<p>
+		<a href=search.jsp>complaint search</a>
+	</p>
+	<p>
+		<a href=cm/complaints?latitude=52.525361&longitude=13.314227&radius=20>example
+			complaint search by lat/long</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?categoryId=1&offset=10&limit=20>example
+			complaint search by category with limit/offset</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?tags=strasse,schnee&statusId=1>example
+			complaint search by status with tags</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?hasPhoto=true>example complaint search by
+			hasPhotos</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?minRating=4&maxRating=5>example complaint
+			search by min/maxRating</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?user=a&orderBy=averageRating&orderDesc=true>example
+			complaint search by user with orderBy averageRating DESC</a>
+	</p>
+
+	<p>
+		<a href=cm/complaints?userId=c3a4>example complaint search by
+			exact userId</a>
+	</p>
+
+	<p>
+		<a href="update.html">send mashup update notification</a>
+	</p>
+
+	<p>
+		<a href="cm/application.wadl">show WADL</a>
+	</p>
+</body>
+</html>

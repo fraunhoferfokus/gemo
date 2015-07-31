@@ -1,0 +1,4 @@
+typeOfChargingStation;LsId;lon;lat;typeOfElectricity;priceOfElectricity
+inductive;6666;30;40;1;40
+inductive;6667;40;50;1;40 
+inductive;6668;50;60;1;40

@@ -1,0 +1,5 @@
+<v1:status xmlns:v1="http://www.fokus.fraunhofer.de/cm/schema/v1">
+  <v1:id>90</v1:id>
+  <v1:title>string</v1:title>
+  <v1:description>string</v1:description>
+</v1:status>

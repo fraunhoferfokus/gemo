@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.fokus.fraunhofer.de" xmlns="http://www.fokus.fraunhofer.de">
+
+	<xs:element name="dataset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="schema_dsc" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="data" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="data">
+		<xs:complexType>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element ref="timestamp" />
+				<xs:element ref="text" />
+				<xs:element ref="integer" />
+				<xs:element ref="float" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="schema_dsc">
+		<xs:complexType>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element ref="timestamp" />
+				<xs:element ref="text" />
+				<xs:element ref="integer" />
+				<xs:element ref="float" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="timestamp">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:dateTime">
+					<xs:attribute name="field" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="integer">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="field" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="float">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="field" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="text">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="field" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="string">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-zA-Z0-9_-])*" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.fokus.fraunhofer.de/cm/schema/v1" 
+	xmlns:cm="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	elementFormDefault="qualified">
+
+	<complexType name="Error">
+		<sequence>
+			<element name="code" type="integer"></element>
+			<element name="message" type="string" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+		
+</schema>

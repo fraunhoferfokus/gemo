@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GeMo Partizipation</string>
+    <string name="submit_button">Absenden</string>
+    
+    <string name="new_charging_station_complaint_button">Anliegen für Ladestation Hinzufügen</string>
+    <string name="show_charging_station_list_button">Mängelliste für Ladestation Ansehen</string>
+    <string name="new_vehicle_complaint_button">Anliegen für Elektrofahrzeug Hinzufügen</string>
+    <string name="show_vehicle_list_button">Mängelliste für Elektrofahrzeug Ansehen</string>
+    
+    <string name="vehicles_button">Elektrofahrzeug Bewerten</string>
+    <string name="charging_station_button">Ladestation Bewerten</string>
+    
+    
+    <string name="title">Titel:</string>
+    <string name="description">Beschreibung:</string>
+    <string name="tags">Tags:</string>
+    <string name="categories">Kategorie:</string>
+    <string name="latitude">latitude:</string>
+    <string name="longitude">longitude:</string>
+    <string name="countryCode">Ländercode:</string>
+    <string name="city">Stadt:</string>
+    <string name="street">Strasse:</string>
+    <string name="houseNo">Hausnummer:</string>
+    <string name="postalCode">PLZ:</string>
+
+</resources>

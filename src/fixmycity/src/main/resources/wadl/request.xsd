@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	xmlns:cm="http://www.fokus.fraunhofer.de/cm/schema/v1"
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="general.xsd"></include>
+	
+	<complexType name="ComplaintRequest">
+		<sequence>
+			<element name="title" type="string"></element>
+			<element name="description" type="string"></element>
+			<element name="tags" type="string" minOccurs="0"></element>
+			<!-- statusId is needed only for updateComplaintRequest -->
+			<element name="statusId" type="string" minOccurs="0"></element>
+			<element name="categoryId" type="string"></element>
+			<element name="geolocation" type="cm:Geolocation"></element>
+			<element name="address" type="cm:Address" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="CommentRequest">
+		<sequence>
+			<element name="newStatusId" type="string" minOccurs="0"></element>
+			<element name="message" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="RatingRequest">
+		<sequence>
+			<element name="value" type="cm:RatingValue"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="StatusRequest">
+		<sequence>
+			<element name="title" type="string"></element>
+			<element name="description" type="string"></element>
+		</sequence>
+	</complexType>	
+
+	<complexType name="CategoryRequest">
+		<sequence>
+			<element name="title" type="string"></element>
+			<element name="description" type="string"></element>
+		</sequence>
+	</complexType>
+	
+</schema>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataset xmlns="http://www.fokus.fraunhofer.de">
+    <schema_dsc>
+    	<text field="eVehicleID"/>
+        <text field="userID"/>
+        <timestamp field="resBegin">2012-07-03T12:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T14:00:00+01:00</timestamp>
+        <float field="longStart">0.0</float>
+        <float field="latStart">0.0</float>
+        <float field="longEnd">0.0</float>
+        <float field="latEnd">0.0</float>
+        <text field="wifi_code"/>
+		<text field="restype"/>
+		<text field="macaddress"/>
+    </schema_dsc>
+    <data>
+    	<text field="eVehicleID">ecar_00023</text>
+        <text field="userID">user111111</text>
+        <timestamp field="resBegin">2012-07-03T12:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T14:00:00+01:00</timestamp>
+        <float field="longStart">13.54314</float>
+        <float field="latStart">52.42745</float>
+        <float field="longEnd">13.16435</float>
+        <float field="latEnd">52.52136</float>
+        <text field="wifi_code">ba87bfb7-7a51-4997-9edb-a6ac6d126773</text>
+		<text field="restype">maintenance</text>
+		<text field="macaddress">12:34:56:78:9A:BC</text>
+    </data>
+    <data>
+    	<text field="eVehicleID">ecar_00024</text>
+        <text field="userID">user222222</text>
+        <timestamp field="resBegin">2012-07-03T13:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T15:00:00+01:00</timestamp>
+        <float field="longStart">13.54314</float>
+        <float field="latStart">52.42745</float>
+        <float field="longEnd">13.16435</float>
+        <float field="latEnd">52.52136</float>
+        <text field="wifi_code">222e3093-0e7d-41d3-b68a-7631e37b7817</text>
+		<text field="restype">tour_business</text>
+		<text field="macaddress">12:34:56:78:9A:BC</text>
+    </data>
+        <data>
+    	<text field="eVehicleID">ecar_00025</text>
+        <text field="userID">user333333</text>
+        <timestamp field="resBegin">2012-07-03T14:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T16:00:00+01:00</timestamp>
+        <float field="longStart">13.54314</float>
+        <float field="latStart">52.42745</float>
+        <float field="longEnd">13.16435</float>
+        <float field="latEnd">52.52136</float>
+        <text field="wifi_code">222e3093-0e7d-41d3-b68a-7631e37b7817</text>
+		<text field="restype">tour_private</text>
+		<text field="macaddress">12:34:56:78:9A:BC</text>
+    </data>
+        <data>
+    	<text field="eVehicleID">ecar_00026</text>
+        <text field="userID">user111111</text>
+        <timestamp field="resBegin">2012-07-03T15:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T17:00:00+01:00</timestamp>
+        <float field="longStart">13.54314</float>
+        <float field="latStart">52.42745</float>
+        <float field="longEnd">13.16435</float>
+        <float field="latEnd">52.52136</float>
+        <text field="wifi_code">222e3093-0e7d-41d3-b68a-7631e37b7817</text>
+		<text field="restype">parking</text>
+		<text field="macaddress">12:34:56:78:9A:BC</text>
+    </data>
+        <data>
+    	<text field="eVehicleID">ecar_00027</text>
+        <text field="userID">user444444</text>
+        <timestamp field="resBegin">2012-07-03T16:00:00+01:00</timestamp>
+        <timestamp field="resEnd">2012-07-03T18:00:00+01:00</timestamp>
+        <float field="longStart">13.54314</float>
+        <float field="latStart">52.42745</float>
+        <float field="longEnd">13.16435</float>
+        <float field="latEnd">52.52136</float>
+        <text field="wifi_code">222e3093-0e7d-41d3-b68a-7631e37b7817</text>
+		<text field="restype">tour_private</text>
+		<text field="macaddress">12:34:56:78:9A:BC</text>
+    </data>
+</dataset>
