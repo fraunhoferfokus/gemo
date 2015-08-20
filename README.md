@@ -6,4 +6,3 @@ Less pollution, less noise, a better quality of life – very good reasons to fo
 GeMo is one of seven »Beyond Tomorrow Projects« in which scientists are working on finding solutions for the pressing issues of the future.
 
 Get more information on: www.gemo.fraunhofer.de
-Development information can be found here: https://extsvnsrv.fokus.fraunhofer.de/cc/elan/gemo/
