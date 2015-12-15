@@ -1,4 +1,0 @@
-client_id;hashed_client_secret;client_name;client_url;client_description;redirect_uri
-8dh9cpkijndku0i1hbogeckdio;$2a$10$4AGAHaW52BZWvkxfz8Iu4.JB6CwpJasGU0MS2K7FjPwsCWu/H6O/C;asdf;google.de;asdf2;http://localhost:8080
-mqih6leh0va630ig9qp4bn7m1e;$2a$10$.K14McX24w9.0Uri8v/pq.s8MxBD4SplmIkNwVGmPAnWH8SkzDYDi;asdf;google.de;asdf2;http://localhost:8080
-n460eli7p75ejjluq0s8pfvt86;$2a$10$1lxaErJp1hjHJ6bcVnaq3OCm9U1X9YbiCL9brLmaehsH71DdzXc/.;Sample Application;http://www.example.com;Description of a Sample App;http://www.example.com/redirect

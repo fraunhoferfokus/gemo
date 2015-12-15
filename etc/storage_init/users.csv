@@ -1,3 +1,0 @@
-FirstName;LastName;UserName;Password;Email;BirthDate;Street;HouseNr;PostalCode;Location;PhoneNumber;BankAccountOwner;BankAccountNumber;BankCode;Preferences;VehicleType;PublicTransportAffinity;DrivingLicenseClass;DrivingLicenseDate;DrivingLicenseLocation;DrivingLicenseID;Lang;CreditCardNumber;TermsAndConditionsDate
-Admin;Admin;Admin;admin;Admin;01.01.2012;Schoenhauser;1;121212;Berlin;12121212;Admin;12121212;111111;no preferences;van;4;A;01.01.1900;Berlin;12121212;DE;111111;02.02.1910
-Developer;Developer;developer;developer;Developer;01.01.2012;Schoenhauser;1;121212;Berlin;12121212;Admin;12121212;111111;no preferences;van;4;A;01.01.1900;Berlin;12121212;DE;111111;02.02.1910

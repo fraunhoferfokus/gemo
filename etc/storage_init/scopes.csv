@@ -1,4 +1,0 @@
-name;description
-read;read erlaubt dem Client lesend auf die Services zuzugreifen.
-write;write erlaubt dem Client schreibend auf die Services zuzugreifen.
-
